@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" id="pauseButton">
+  <!-- Background circle -->
+  <circle cx="12" cy="12" r="10" fill="#1DB954" />
+  <!-- Pause icon -->
+  <rect x="8" y="7" width="3" height="10" fill="white" />
+  <rect x="14" y="7" width="3" height="10" fill="white" />
+</svg>

@@ -1,0 +1,6 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <g transform="rotate(180 12 12)">
+    <path fill="gray" d="M20 19V5L8 12L20 19Z" stroke="gray" stroke-width="1.5" stroke-linejoin="round"/>
+    <path fill="gray" d="M4 4V20" stroke="gray" stroke-width="1.5"/>
+  </g>
+</svg>
