@@ -15,13 +15,13 @@ function secondsToMinutesSeconds(seconds) {
 
 let isPlaying1 = false
 
-let currentsong1 = new Audio('../song/Starboy.mp3');
+let currentsong1 = new Audio('/Spotify/song/Starboy.mp3');
 document.getElementById('star-boy').addEventListener('click', () => {
   document.querySelector('#pevbtn').addEventListener("click", () => {
     isPlaying1 = false
     isPlaying5= true
     currentsong5.play();
-    document.querySelector("#playbtn5").innerHTML = '<img src="../photos/pause.svg" alt="">'
+    document.querySelector("#playbtn5").innerHTML = '<img src="/Spotify/photos/pause.svg" alt="">'
     document.querySelector("#playbtn5").style.opacity = 1
     document.querySelector("#hot-line").style.backgroundColor = "#333"
     
@@ -57,8 +57,8 @@ document.getElementById('star-boy').addEventListener('click', () => {
       currentsong3.pause()
       currentsong4.pause()
       isPlaying1 = true;
-      document.querySelector("#playbtn1").innerHTML = '<img src="../photos/pause.svg" alt="">'
-        document.querySelector("#play-for-seekbar").innerHTML = '  <img id="play-for-seekbar" src="../photos/play-for-seekbar.svg" alt="">'
+      document.querySelector("#playbtn1").innerHTML = '<img src="/Spotify/photos/pause.svg" alt="">'
+        document.querySelector("#play-for-seekbar").innerHTML = '  <img id="play-for-seekbar" src="/Spotify/photos/play-for-seekbar.svg" alt="">'
       // document.querySelector("#playbtn1").style.opacity = 1
       // document.querySelector("#star-boy").style.backgroundColor = "#333"
     }
@@ -66,7 +66,7 @@ document.getElementById('star-boy').addEventListener('click', () => {
       currentsong1.pause();
       isPlaying1 = false;
       document.querySelector("#playbtn1").innerHTML = '<img src="../photos/play-playlist.svg" alt="" >';
-      document.querySelector("#play-for-seekbar").innerHTML = ' <img id="play-for-seekbar" src="../photos/pause-for-seekbar.svg" alt="">'
+      document.querySelector("#play-for-seekbar").innerHTML = ' <img id="play-for-seekbar" src="/Spotify/photos/pause-for-seekbar.svg" alt="">'
       
     }
   });
@@ -79,16 +79,16 @@ document.getElementById('star-boy').addEventListener('click', () => {
       currentsong3.pause()
       currentsong4.pause()
       isPlaying1 = true;
-      document.querySelector("#playbtn1").innerHTML = '<img src="../photos/pause.svg" alt="">'
-      document.querySelector("#play-for-seekbar").innerHTML = '  <img id="play-for-seekbar" src="../photos/play-for-seekbar.svg" alt="">'
+      document.querySelector("#playbtn1").innerHTML = '<img src="/Spotify/photos/pause.svg" alt="">'
+      document.querySelector("#play-for-seekbar").innerHTML = '  <img id="play-for-seekbar" src="/Spotify/photos/play-for-seekbar.svg" alt="">'
       // document.querySelector("#playbtn1").style.opacity = 1
       // document.querySelector("#star-boy").style.backgroundColor = "#333"
     }
     else {
       currentsong1.pause();
       isPlaying1 = false;
-      document.querySelector("#playbtn1").innerHTML = '<img src="../photos/play-playlist.svg" alt="" >';
-      document.querySelector("#play-for-seekbar").innerHTML = '  <img id="play-for-seekbar" src="../photos/pause-for-seekbar.svg" alt="">'
+      document.querySelector("#playbtn1").innerHTML = '<img src="/Spotify/photos/play-playlist.svg" alt="" >';
+      document.querySelector("#play-for-seekbar").innerHTML = '  <img id="play-for-seekbar" src="/Spotify/photos/pause-for-seekbar.svg" alt="">'
       
     }
   });
@@ -98,15 +98,15 @@ document.getElementById('star-boy').addEventListener('click', () => {
   if (isPlaying1) {
     currentsong1.pause();
     isPlaying1 = false;
-    document.querySelector("#playbtn1").innerHTML = '<img src="../photos/play-playlist.svg" alt="" >';
+    document.querySelector("#playbtn1").innerHTML = '<img src="/Spotify/photos/play-playlist.svg" alt="" >';
     
-    document.querySelector("#play-for-seekbar").innerHTML = '  <img id="play-for-seekbar" src="../photos/pause-for-seekbar.svg" alt="">'
+    document.querySelector("#play-for-seekbar").innerHTML = '  <img id="play-for-seekbar" src="/Spotify/photos/pause-for-seekbar.svg" alt="">'
     
     
   } else {
     currentsong1.play();
     isPlaying1 = true;
-    document.querySelector("#playbtn1").innerHTML = '<img src="../photos/pause.svg" alt="">'
+    document.querySelector("#playbtn1").innerHTML = '<img src="/Spotify/photos/pause.svg" alt="">'
     document.querySelector("#playbtn1").style.opacity = 1
     document.querySelector("#star-boy").style.backgroundColor = "#333"
 
@@ -141,7 +141,7 @@ document.getElementById('star-boy').addEventListener('click', () => {
     document.querySelector(".cricle").style.left = (currentsong1.currentTime / currentsong1.duration) * 100 + "%";
     console.log((currentsong1.currentTime / currentsong1.duration) * 100 + "%")
   })
-  document.querySelector("#play-for-seekbar").innerHTML = '  <img id="play-for-seekbar" src="../photos/play-for-seekbar.svg" alt="">'
+  document.querySelector("#play-for-seekbar").innerHTML = '  <img id="play-for-seekbar" src="/Spotify/photos/play-for-seekbar.svg" alt="">'
 
 })
 
